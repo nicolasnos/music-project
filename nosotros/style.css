@@ -1,0 +1,67 @@
+@import url(../normalize.css);
+@import url(../banner.css);
+
+body {
+    font-family: sans-serif;
+    min-width: 480px;
+    max-width: 1920px;
+    
+  }
+
+  .banner_main{
+  
+    background-image: url("https://s10.s3c.es/imag/_v0/770x420/0/b/7/Instrumentos-musicales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    height: 53vh;
+    position: relative;
+    
+  }
+
+  .banner_main::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(36,30,0);
+background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121,112,9,0.5914740896358543) 35%, rgba(185,135,8,0.8435749299719888) 100%);
+  }
+  
+  .banner_main header{
+    position: relative;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  header section {
+ 
+  position: relative;
+  color: #f5f5f5f5;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    
+  }
+  nav ul li {
+    font-size: large;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+  }
+  li a{
+    color: #f5f5f5f5;
+  }
+  h1{
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, -29px -33px 2px rgba(206,206,206,0.08);
+    font-weight: 100;
+    max-width: 700px;
+   font-size: 60px;
+  }
+  
