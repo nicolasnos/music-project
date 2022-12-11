@@ -1,3 +1,15 @@
+@import url(../normalize.css);
+@import url(../banner.css);
+
 body {
-  background-color: blueviolet;
+  font-family: sans-serif;
+  min-width: 480px;
+  max-width: 1920px;
+  flex-wrap: wrap;
 }
+
+/*
+flex-wrap --- header
+https://cssgradient.io/
+https://bennettfeely.com/clippy/
+*/
