@@ -13,7 +13,7 @@
     position: absolute;
     inset: 0;
     background: rgb(36,30,0);
-    background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, rgba(185,135,8,0.8435749299719888) 100%);
+    background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #b98708d7 100%);
   }
 
   
