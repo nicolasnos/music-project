@@ -1,3 +1,132 @@
+@import url(../normalize.css);
+@import url(../banner.css);
+
 body {
-  background-color: blueviolet;
+  font-family: sans-serif;
+  min-width: 480px;
+  max-width: 1920px;
+  flex-wrap: wrap;
+  background-color: #b98708d7 ;
 }
+
+section {
+  color: #f5f5f5;
+  display: table;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 6%;
+}
+
+.blog {
+  margin-left: 50px;
+  text-align: center;
+  min-width: 350px;
+  width: 50%;
+  float: left;
+}
+.blog img {
+  width: 100%;
+}
+
+.cursos {
+  float: right;
+  flex-wrap: wrap;
+  min-width: 350px;
+  width: 35%;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+ .cursos div {
+  margin-top: 10px;
+  padding: 15px, 0, 15px, 0;
+  border: dotted 1px #f5f5f5;  
+ }
+
+ .cursos div h3 {
+  color: #f5f5f5;
+  font-size: 24px;
+ }
+
+ .cursos div h3:hover {
+  transition: 0.5s;
+  font-size: 28px;
+  color: #f5f5f5;
+  text-decoration: underline #f5f5f5;
+ }
+
+ .cursos div img {
+  width: 70%;
+  border-radius: 20px;
+ }
+
+ button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+ }
+
+ button:hover {
+  transition: 0.5s;
+  background-color: #7e5b10;
+  margin-top: 3px;
+  margin-right: 3px;
+  color: #f5f5f5;
+ }
+
+ .musicGender {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+ }
+
+ .musicGender div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+ .musicGender div img {
+  width: 40%;
+ }
+ .musicGender div p {
+  width: 50%;
+  padding: 20px;
+ }
+
+ .musicGender button a{
+  color: #000000;
+  height: 40px;
+  margin-top: -50px;
+ }
+
+ .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: -50px;
+ }
+ .redes {
+  display: flex;
+  width: 50%;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  justify-content: space-around;
+  margin-bottom: 20px;
+ }
+
+ .redes a {
+  height: 30px;
+  padding: 10px;
+ }
+
+/*
+flex-wrap --- header
+https://cssgradient.io/
+https://bennettfeely.com/clippy/
+*/

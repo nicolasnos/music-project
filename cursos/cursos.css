@@ -1,3 +1,97 @@
-body {
-  background-color: aqua;
+@import url(../banner.css);
+@import url(../normalize.css);
+
+body{
+  font-family: sans-serif;
+  min-width: 480px;
+  max-width: 1920px;
+  flex-wrap: wrap;
 }
+
+.cuerda{
+  box-sizing: content-box;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.cuerda img {
+  padding-bottom: 30px;
+  box-sizing: content-box;
+  height:240px;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  padding-top:50px;
+  padding-bottom: none;
+}
+
+@media (min-width: 780px) {
+.cuerda{
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+}
+@media (min-width: 780px) {
+  .percusion{
+    display: grid;
+    column-gap: 3rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  }
+
+
+.texto2{
+  padding-top: 180px ;
+  padding-right: 250px;
+  flex-wrap: wrap;
+}
+
+.percusion img{
+  padding-bottom: 30px;
+  padding-top: 190px;
+  padding-left: 200px;
+  box-sizing: content-box;
+  height:270px;
+}
+
+@media (min-width: 780px) {
+  .viento{
+    display: grid;
+    column-gap: 3rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  }
+
+.texto3{
+  padding-top: 180px ;
+  padding-right: 200px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.viento img{
+  padding-bottom: 30px;
+  padding-top: 190px;
+  padding-left: 280px;
+  box-sizing: content-box;
+  height:360px;
+}
+
+h1{
+  font-size: 5.5rem;
+} 
+
+section {
+  color: rgb(0, 0, 0);
+  display: table;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 6%;
+}
+/**::selection{
+  background-color: #50352a;
+  color: #f5f5f5;
+}*/

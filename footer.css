@@ -1,0 +1,16 @@
+@import url(../normalize.css);
+@import url(../banner.css);
+@import url(./style.css);
+
+footer {
+  background: rgb(36,30,0);
+  background: linear-gradient(180deg, rgb(36, 30, 0) 0%, rgb(121, 112, 9) 50%, rgb(36, 30, 0) 100%);;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
+
+footer ul li {
+  margin-top: 7%;
+ }
