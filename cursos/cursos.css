@@ -8,10 +8,15 @@ body{
   flex-wrap: wrap;
 }
 
+.cuerda{
+  box-sizing: content-box;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
 .cuerda img {
   padding-bottom: 30px;
-  padding-top: 190px;
-  padding-left: 200px;
   box-sizing: content-box;
   height:240px;
 }
@@ -29,16 +34,6 @@ body{
   column-gap: 3rem;
   grid-template-columns: 1fr 2fr;
 }
-}
-
-.texto1{
-
-  padding-top: 180px ;
-  padding-right: 250px;
-  flex-wrap: wrap;
-
-}
-
 @media (min-width: 780px) {
   .percusion{
     display: grid;
@@ -85,12 +80,6 @@ body{
   height:360px;
 }
 
-.cuerda{
-  box-sizing: content-box;
-
-
-}
-
 h1{
   font-size: 5.5rem;
 } 
@@ -102,3 +91,7 @@ section {
   width: 100%;
   gap: 6%;
 }
+/**::selection{
+  background-color: #50352a;
+  color: #f5f5f5;
+}*/
