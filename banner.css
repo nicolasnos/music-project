@@ -1,17 +1,20 @@
-.banner_main{
-  background-image: url("https://s10.s3c.es/imag/_v0/770x420/0/b/7/Instrumentos-musicales.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 53vh;
-  min-height: 400px;
-  position: relative;  
-  }
 
+.banner_main{
+    background-image: url("https://s10.s3c.es/imag/_v0/770x420/0/b/7/Instrumentos-musicales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    height: 53vh;
+    position: relative;
+    
+  }
+  
   .banner_main::before{
     content: '';
     position: absolute;
     inset: 0;
+
     background: rgb(36,30,0);
     background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #b98708d7 100%);
     min-height: 400px;
@@ -22,8 +25,10 @@
       margin-top: 0px;
       color: #000;
     }
-  }
 
+    filter: brightness(0.4);
+
+  }
   
   .banner_main header{
     position: relative;
@@ -53,6 +58,7 @@
     font-weight: bold;
   }
   
+
   nav ul li {
     font-size: large;
     gap: 5px;
@@ -62,6 +68,7 @@
   #banner_title{
     margin: 0  auto;
     margin-bottom: 50px;
+
     width: 100%;
     max-width: 80%;
     position: relative;
@@ -71,16 +78,9 @@
   #banner_title h1{
     font-weight: 100;
     max-width: 1000px;
-    font-size: 60px;
-    font-weight: 500;
-    display: flex;
-    text-align: center;
-    margin-bottom: 10px;
+   font-size: 50px;
   }
   
   #banner_title p{
     font-size: 23px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
   }
