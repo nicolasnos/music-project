@@ -1,20 +1,22 @@
 @import url(../normalize.css);
-@import url(../banner.css);
+@import url(../banner2.css);
 
 body {
   font-family: sans-serif;
   min-width: 480px;
   max-width: 1920px;
   flex-wrap: wrap;
-  background-color: #b98708d7 ;
 }
 
 section {
-  color: #f5f5f5;
+  color: #000000;
   display: table;
   flex-wrap: wrap;
   width: 100%;
   gap: 6%;
+}
+.contenido {
+  margin-top: 15rem;
 }
 
 .blog {
@@ -34,25 +36,24 @@ section {
   min-width: 350px;
   width: 35%;
   text-align: center;
-  color: #f5f5f5;
+  color: #000000;
 }
 
  .cursos div {
   margin-top: 10px;
   padding: 15px, 0, 15px, 0;
-  border: dotted 1px #f5f5f5;  
+  border: dotted 1px #797009;  
  }
 
  .cursos div h3 {
-  color: #f5f5f5;
+  color: #797009;
   font-size: 24px;
  }
 
  .cursos div h3:hover {
   transition: 0.5s;
   font-size: 28px;
-  color: #f5f5f5;
-  text-decoration: underline #f5f5f5;
+  text-decoration: underline #797009;
  }
 
  .cursos div img {
@@ -66,6 +67,7 @@ section {
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: 600;
+  background-color: #797009;
  }
 
  button:hover {
@@ -74,6 +76,7 @@ section {
   margin-top: 3px;
   margin-right: 3px;
   color: #f5f5f5;
+  font-size: large;
  }
 
  .musicGender {
@@ -115,9 +118,10 @@ section {
   display: flex;
   width: 50%;
   border-radius: 50px;
-  background-color: #f5f5f5;
+  background-color: #797009;
   justify-content: space-around;
   margin-bottom: 20px;
+
  }
 
  .redes a {

@@ -1,4 +1,5 @@
 @import url(../banner.css);
+@import url(../footer.css);
 @import url(../normalize.css);
 /*@import url(../footer.css );*/
 
@@ -34,12 +35,12 @@ padding: 0 20px;
 }
 
 @media (min-width: 780px) {
-  .cuerda{
-    display: grid;
-    column-gap: 3rem;
-    grid-template-columns: 1fr 2fr;
-  }
+.cuerda{
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: 1fr 2fr;
 }
+
 /*end first course*/
 
 /*second course*/
