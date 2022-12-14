@@ -9,6 +9,11 @@ body{
   flex-wrap: wrap;
 }
 
+.banner_title {
+  position: relative;
+  color: #f5f5f5;
+  font-size: large;
+}
 .cuerda{
   box-sizing: content-box;
 max-width: 1200px;
