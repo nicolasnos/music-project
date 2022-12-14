@@ -24,11 +24,9 @@
     #banner_title {
       margin-top: 0px;
       color: #000;
+      filter:brightness(0.4)
     }
-
-    filter: brightness(0.4);
-
-  }
+ }
   
   .banner_main header{
     position: relative;
