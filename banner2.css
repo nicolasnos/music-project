@@ -17,7 +17,7 @@
   }
 
   .banner_title{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

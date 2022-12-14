@@ -1,5 +1,5 @@
 @import url(../normalize.css);
-@import url(../banner.css);
+@import url(../banner2.css);
 
 body {
   font-family: sans-serif;
@@ -14,6 +14,9 @@ section {
   flex-wrap: wrap;
   width: 100%;
   gap: 6%;
+}
+.contenido {
+  margin-top: 15rem;
 }
 
 .blog {

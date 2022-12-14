@@ -12,7 +12,9 @@
   width: 85%;
   margin-left: 10%;
 }
-
+.contact {
+  margin-top: 10px
+}
 form {
   position: relative;
   display: flex;
