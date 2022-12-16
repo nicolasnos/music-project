@@ -1,82 +1,64 @@
-.banner_main{
-    background-image: url("https://s10.s3c.es/imag/_v0/770x420/0/b/7/Instrumentos-musicales.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 53vh;
-    position: relative;
-  }
-  
-  .banner_main::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background: rgb(36,30,0);
+* {
+  margin-top: 0%;
+}
 
-    background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #b98708d7 100%);
-  }
-  
-  @media (max-width: 973px ) {
-    .banner_title {
-      margin-top: 0px;
-      color: rgb(0, 0, 0);
-      filter:brightness(0.4)
-    }
+.banner {
+  background-image: url("https://s10.s3c.es/imag/_v0/770x420/0/b/7/Instrumentos-musicales.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-size: larger;
+  height: 100%;
+  text-transform: capitalize;
+}
+
+.banner nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  font-size: large;
+  color: #f5f5f5;
+}
+
+.banner nav ul{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 50px;
+  font-size: 18px;
+  height: 25%;
+}
+
+h2 a{
+  font-weight: 700;
+  color: #f5f5f5;
+}
+h2 a:hover {
+  transition: 0.5s;
+  background-color: #ff9100;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50px;
+}
+ nav ul li a {
+  color: #f5f5f5;
  }
-  
-  .banner_main header{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .banner_main nav ul{
-    display: flex;
-    gap: 20px;
-  }
 
-  .banner_main nav ul a{
-    color: #f5f5f5;
-    font-size: 19px;
-  }
-  
-  .banner_logo{
-    margin: 20px 0;
-    color: #f5f5f5;
-    font-size: 60px;
-    font-weight: 100;
-  }
-  
-  .banner_logo span{
-    font-weight: bold;
-  }
-  
-  nav ul li {
-    font-size: large;
-    gap: 5px;
-    color: #f5f5f5f5; 
-  }
+ nav ul li a:hover {
+  transition: 0.5s;
+  background-color: #ff9100;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50px;
+  font-size: larger;
+ }
 
-  .banner_title{
-    margin: 0  auto;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    color: #f5f5f5;
-  }
-  
-  .banner_title h1{
-    font-weight: 100;
-    max-width: 1000px;
-    font-size: 40px;
-  }
-  
-  .banner_title p{
-    font-size: 23px;
-  }
+.texto-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f5f5;
+}
