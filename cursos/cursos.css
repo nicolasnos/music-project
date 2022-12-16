@@ -192,8 +192,3 @@ section {
   .texto_interno{
     font-size: 17px;
   }
-
-*::selection{
-  background-color: #c0633e;
-  color: #f5f5f5;
-}
