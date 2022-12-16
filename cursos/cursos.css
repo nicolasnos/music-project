@@ -1,15 +1,16 @@
 @import url(../banner.css);
 @import url(../footer.css);
 @import url(../normalize.css);
-/*@import url(../footer.css );*/
 
 body{
   font-family: sans-serif;
-  min-width: 480px;
+  min-width: 380px;
   max-width: 1920px;
   flex-wrap: wrap;
 }
+
 /* main title*/
+
 .titulo{
   display: flex;
   justify-content: center;
@@ -34,11 +35,12 @@ padding: 0 20px;
   height:240px;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 480px) {
 .cuerda{
   display: grid;
   column-gap: 3rem;
   grid-template-columns: 1fr 2fr;
+}
 }
 
 /*end first course*/
@@ -60,7 +62,7 @@ padding: 0 20px;
 }
 
 
-  @media (min-width: 780px) {
+  @media (min-width: 480px) {
   .percusion{
     display: grid;
     column-gap: 3rem;
@@ -84,10 +86,10 @@ padding: 0 20px;
 .viento img{
   padding-bottom: 30px;
   box-sizing: content-box;
-  height:240px;
+  height:29vh;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 480px) {
   .viento{
     display: grid;
     column-gap: 3rem;
