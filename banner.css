@@ -5,14 +5,13 @@
     background-position: center;
     height: 53vh;
     position: relative;
-    
   }
   
   .banner_main::before{
     content: '';
     position: absolute;
     inset: 0;
-
+    background-size: cover;
     background: rgb(36,30,0);
 
     background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #b98708d7 100%);
@@ -21,7 +20,7 @@
   @media (max-width: 973px ) {
     .banner_title {
       margin-top: 0px;
-      color: #000;
+      color: rgb(0, 0, 0);
       filter:brightness(0.4)
     }
  }
@@ -38,6 +37,7 @@
     display: flex;
     gap: 20px;
   }
+
   .banner_main nav ul a{
     color: #f5f5f5;
     font-size: 19px;
@@ -54,7 +54,6 @@
     font-weight: bold;
   }
   
-
   nav ul li {
     font-size: large;
     gap: 5px;
