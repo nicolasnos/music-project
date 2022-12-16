@@ -13,12 +13,12 @@
     inset: 0;
     background-size: cover;
     background: rgb(36,30,0);
-    background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #d3a532d3 100%);
-    min-height: 53vh;
+
+    background: linear-gradient(251deg, rgba(36,30,0,0) 0%, rgba(121, 112, 9, 0.411) 35%, #b98708d7 100%);
   }
   
   @media (max-width: 973px ) {
-    #banner_title {
+    .banner_title {
       margin-top: 0px;
       color: rgb(0, 0, 0);
       filter:brightness(0.4)
@@ -60,21 +60,23 @@
     color: #f5f5f5f5; 
   }
 
-  #banner_title{
+  .banner_title{
     margin: 0  auto;
-    margin-bottom: 50px;
-    width: 100%;
-    max-width: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     position: relative;
     color: #f5f5f5;
   }
   
-  #banner_title h1{
+  .banner_title h1{
     font-weight: 100;
     max-width: 1000px;
-   font-size: 50px;
+    font-size: 40px;
   }
   
-  #banner_title p{
-    font-size: 50px;
+  .banner_title p{
+    font-size: 23px;
   }
