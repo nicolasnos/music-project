@@ -7,6 +7,7 @@ body{
   min-width: 380px;
   max-width: 1920px;
   flex-wrap: wrap;
+  background-color: #f5f5f5;
 }
 
 /* main title*/
@@ -137,6 +138,9 @@ section {
     color: #f5f5f5;
 
   }
+  .final a{
+    color: #f5f5f5;
+  }
 
   p{
     text-transform: capitalize;
@@ -191,4 +195,28 @@ section {
 
   .texto_interno{
     font-size: 17px;
+  } 
+
+  @media(prefers-color-scheme: dark){
+    body{
+      background-color:  #111111;
+    }
+    .titulo{
+      color: #f7e109;
+    }
+    h4{
+      color: #dadada;
+    }
+    p{
+      color: #dadada;
+    }
+    button{
+      background-color:#f7e109;
+    }
+    h2{
+      color: black;
+    }
+    h2 span{
+      color: black;
+    }
   }
