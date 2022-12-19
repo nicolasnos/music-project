@@ -8,34 +8,10 @@ body {
     max-width: 1920px;
     flex-wrap: wrap;
   }
-  
-  .banner_main header{
-    position: relative;
-  }
-
-  nav{
-    display: flex;
-    justify-content: space-around;
-  }
-  header section {
  
-  position: relative;
-  color: #f5f5f5f5;
-  }
-
-  h1{
-    font-weight: bolder;
-    font-weight: 100;
-    max-width: 700px;
-   font-size: 60px;
-  }
-
-  .texto {
-    display: flex;
-    justify-content: center;
-  }
    
   h3{
+    padding-top: 200px;
     font-family: sans-serif;
     font-size: 40px;
     text-align: center;
@@ -47,7 +23,7 @@ body {
     margin: auto;
     margin-top: 100px;
     height:500px;
-    padding: 80px;
+    padding: 80px 40px;
     border-top: 6px solid #693604;
   }
   .contenedor img{
@@ -69,7 +45,7 @@ body {
     margin: auto;
     margin-top: 100px;
     height:500px;
-    padding: 80px;
+    padding: 80px 40px;
     border-top: 6px solid #693604;
   }
   .contenedor2 img{
@@ -104,7 +80,7 @@ footer ul li {
       margin: auto;
       margin-top: 100px;
       height:500px;
-      padding: 80px;
+      padding: 50px 20px;
       border-top: 6px solid #693604;
     }
     .contenedor img{
@@ -126,7 +102,7 @@ footer ul li {
       margin: auto;
       margin-top: 100px;
       height:500px;
-      padding: 80px;
+      padding: 50px 20px;
       border-top: 6px solid #693604;
     }
     .contenedor2 img{
@@ -149,6 +125,10 @@ footer ul li {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    
+   }
+   footer a{
+    color: #f5f5f5;
    }
   
   footer ul {
@@ -161,4 +141,24 @@ footer ul li {
   
    footer ul li a {
     color: #f5f5f5;
+   }
+   @media (prefers-color-scheme: dark){
+    body{
+      background-color: #111111;
+    }
+    h3{
+      color: #dadada
+    }
+    .contenedor{
+      border-top: 6px solid #f7e109;
+    }
+    .contenedor2{
+      border-top: 6px solid #f7e109;
+    }
+    .contenedor p{
+      color: #dadada;
+    }
+    .contenedor2 p{
+      color: #dadada;
+    } 
    }
