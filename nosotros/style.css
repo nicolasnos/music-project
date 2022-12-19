@@ -52,7 +52,7 @@ body {
     width: 300px;
     float: left;
     margin-right: 30px;
-    margin-bottom: 9git0px;
+    margin-bottom: 90px;
     
   }
 
@@ -161,4 +161,10 @@ footer ul li {
     .contenedor2 p{
       color: #dadada;
     } 
+    h2{
+      color: black;
+    }
+    h2 span{
+      color: black;
+    }
    }

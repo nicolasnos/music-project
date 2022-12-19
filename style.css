@@ -134,3 +134,32 @@ flex-wrap --- header
 https://cssgradient.io/
 https://bennettfeely.com/clippy/
 */
+@media(prefers-color-scheme: dark){
+  body{
+    background-color: #111111;
+  }
+  h2{
+    color: #dadada;
+  }
+  p{
+    color: #dadada;
+  }
+  .cursos div h3{
+    color: #f7e109;
+  }
+  button{
+    background-color:#f7e109;
+  }
+  .redes{
+    background-color: #f7e109;
+  }
+  .banner_logo{
+    color: #000000;
+  }
+  .banner h2 {
+   color: #000000;
+  }
+  .banner h2 span{
+    color: #000000;
+  }
+}
