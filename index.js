@@ -1,43 +1,50 @@
-const contacto = document.querySelector(".contacto");
+const formContact = document.querySelector(".contacto");
 
-contacto.addEventListener("submit", (e) => {
-  e.preventDefault();
+formContact.addEventListener("submit", function (event) {
+  event.preventDefault();
 
+  // Elimina los errores de los que ya pasam
   document
     .querySelectorAll(".error")
-    ?.forEach((i) => i.classlist.remove("error"));
-});
+    ?.forEach((item) => item.classList.remove("error"));
 
-const eValidation = new RegExp(
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-);
+  // convierte los valores de los imputs en un objeto
+  const data = Object.fromEntries(new FormData(event.target));
+  const { correo, mensaje, nombre } = data;
 
-const nValidation = new RegExp(
-  /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/
-);
+  // Expresiones regulares
+  const emailValidation = new RegExp(
+    /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/
+  );
+  const nameValidator = new RegExp(
+    /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/
+  );
 
-if (eValidation.test(email) && email > 7) {
-  if (nValidation.test(nombre) && nombre > 10) {
-    if (mensaje.lenght > 30) {
-      localStorage.setItem(
-        "dataUserV1",
-        JSON.stringify({
-          email,
-          nombre,
-          mensaje,
-        })
-      );
+  // Condicionales para los datos
+  if (emailValidation.test(correo) && correo.length > 7) {
+    if (nameValidator.test(nombre) && nombre.length > 10) {
+      if (mensaje.length > 30) {
+        localStorage.setItem(
+          "dataUserV1",
+          JSON.stringify({
+            correo,
+            mensaje,
+            nombre,
+          })
+        );
+      } else {
+        document.querySelector('input[name="mensaje"]').classList.add("error");
+      }
     } else {
-      document.querySelector('input[name="mensaje"').classList.add("error");
+      document.querySelector('input[name="nombre"]').classList.add("error");
     }
   } else {
-    document.querySelector('input[name="nombre"').classList.add("error");
+    document.querySelector('input[name="email"]').classList.add("error");
   }
-} else {
-  document.querySelector('input[name="email"').classList.add("error");
-}
+});
 
 console.log(JSON.parse(localStorage.getItem("dataUserV1")));
+
 /*const boton = document.getElementById("button");
 let nombre = document.getElementById("nombre");
 let email = document.getElementById("email");
