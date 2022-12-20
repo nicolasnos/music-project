@@ -3,7 +3,7 @@
 }
 
 .banner {
-  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f0753743c6&attid=0.1&permmsgid=msg-f:1752676997529227724&th=1852c27173ba51cc&view=att&disp=safe&realattid=1852c26dc104e860a341");
+  background-image: url(./imagenes/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
