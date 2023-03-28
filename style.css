@@ -8,6 +8,12 @@ body {
   flex-wrap: wrap;
 }
 
+@media(prefers-color-scheme: dark){
+  body{
+    background-color: #111111;
+  }
+}
+
 .blog{
   width: 90%;
   margin-left: 5%;
