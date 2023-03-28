@@ -2,7 +2,9 @@
 @import url(../banner.css);
 @import url(../footer.css);
 
-
+main{
+  display: block;
+}
 .backContact {
   background-image: url(../imagenes/guitars.png);
   background-repeat: no-repeat;
@@ -15,6 +17,7 @@
 .contact {
   margin-top: 10px
 }
+
 form {
   position: relative;
   display: flex;
